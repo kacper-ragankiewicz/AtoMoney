@@ -45,14 +45,14 @@ int main()
                     cout<<"Stawka netto to: "<<netto<<" euro"<<endl;
                     cout<<"W zl:            "<<netto * 4.55<<" pln"<<endl;
                     cout<<" "<<endl;
-                    cout<<"W Tydzien: "<<sntzn<<" euro"<<endl;
-                    cout<<"W zl:     "<<sntzn * 4.55<<" pln"<<endl;
+                    cout<<"W Tydzien: "<<sntmum<<" euro"<<endl;
+                    cout<<"W zl:     "<<sntmum * 4.55<<" pln"<<endl;
                     cout<<" "<<endl;
-                    cout<<"W Miesiac: "<<sntzn * 4<<" euro"<<endl;
-                    cout<<"W zl:     "<<sntzn * 4.55 * 4<<" pln"<<endl;
+                    cout<<"W Miesiac: "<<sntmum * 4<<" euro"<<endl;
+                    cout<<"W zl:     "<<sntmum * 4.55 * 4<<" pln"<<endl;
                     cout<<" "<<endl;
-                    cout<<"Calosciowo: "<<sntzn * 4  * 2<<" euro"<<endl;
-                    cout<<"W zl:      "<<sntzn * 4  * 2 * 4.55<<" pln"<<endl;
+                    cout<<"Calosciowo: "<<sntmum * 4  * 2<<" euro"<<endl;
+                    cout<<"W zl:      "<<sntmum * 4  * 2 * 4.55<<" pln"<<endl;
                     cout<<" "<<endl;
                 }
                 if (d==0) {
@@ -61,6 +61,10 @@ int main()
                     st = (netto * 40) - b - c;
                     sm = st * 4;
 
+
+                    cout<<" "<<endl;
+                    cout<<"Stawka netto to: "<<netto<<" euro"<<endl;
+                    cout<<"W zl:            "<<netto * 4.55<<" pln"<<endl;
                     cout<<" "<<endl;
                     cout<<"W Tydzien: "<<st<<" euro"<<endl;
                     cout<<"W zl:     "<<st * 4.55<<" pln"<<endl;
