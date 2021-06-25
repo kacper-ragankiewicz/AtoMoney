@@ -2,8 +2,8 @@
 
 using namespace std;
 
-float a,b,c,d,p,netto,sntbn,n,sntzn,sntmum;
-float st,sm;
+float a,b,c,d,p,g,netto,sntbn,n,sntzn,sntmum;
+float st,sm, podatek;
 
 int main()
 {
@@ -19,6 +19,8 @@ int main()
 
     char ans = 'N';
     do{
+        cout<<"Podaj stawke podatku: ";
+        cin>>g;
         cout<<"Podaj stawke euro/h brutto: ";
         cin>>a;
 
@@ -35,7 +37,8 @@ int main()
                     cout<<"Jaki procent podstawowej stawki jest stawka za nadgodziny?(150%,120%, etc.): ";
                     cin>>p;
 
-                     netto = a * 0.86;
+                     podatek = 1.00 - (g/100);
+                     netto = a * podatek;
                      sntbn = netto * 40 ;
                      n = (netto * d * p)/100;
                      sntzn = sntbn + n;
@@ -57,7 +60,8 @@ int main()
                 }
                 if (d==0) {
 
-                    netto = a * 0.86;
+                    podatek = 1.00 - (g/100);
+                    netto = a * podatek;
                     st = (netto * 40) - b - c;
                     sm = st * 4;
 
